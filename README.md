@@ -8,7 +8,7 @@ Versão 01 - agenda.v1 = 22/04/2022
 - Criação das classes Atividade e Usuario;
 - Criação da aplicação flask;
 - Criação das rotas principais:
-    > index()
+    > index()\n
     > nova_atividade()
     > registrar()
     > login()
