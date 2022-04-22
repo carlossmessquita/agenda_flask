@@ -1,0 +1,17 @@
+{% extends 'template.html' %}
+{% block content %}
+    <!--Cards-->
+    <div class="catalogo">
+    {% for atvd in atividades %}
+        <div class="catalogo-item">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" >
+                <h2>{{ atvd.atividade }}</h2>
+                <h5 class="card-title">{{ atvd.data }} | {{ atvd.hora }} </h5>
+                <p class="card-text">{{ atvd.descricao }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

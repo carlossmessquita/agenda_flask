@@ -1,0 +1,18 @@
+{% extends 'template.html' %}
+{% block content %}
+      <form action="{{ url_for('registrar') }}" method="post" class="formulario">
+          <label for="atividade" class="label">Atividade</label>
+          <input type="text" name="atividade" id="atividade" class="input">
+
+          <label for="data" class="label">Data</label>
+          <input type="date" name="data" id="data" class="input">
+
+          <label for="hora" class="label">Hora</label>
+          <input type="time" name="hora" id="hora" class="input">
+
+          <label for="descricao" class="label">Descrição</label>
+          <input type="text" name="descricao" id="descricao" class="input">
+          <br>
+          <input type="submit" value="Registrar" class="button btn-primary">
+      </form>
+{% endblock %}
